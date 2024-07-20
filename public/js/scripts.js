@@ -1,6 +1,7 @@
 const socket = io();
 
 let username = '';
+let interests = '';
 
 const messageInput = document.getElementById('messageInput');
 const sendButton = document.getElementById('sendButton');
@@ -8,16 +9,18 @@ const messages = document.getElementById('messages');
 
 const usernameModal = document.getElementById('usernameModal');
 const usernameInput = document.getElementById('usernameInput');
+const interestsInput = document.getElementById('interestsInput');
 const usernameButton = document.getElementById('usernameButton');
 const closeButton = document.getElementsByClassName('close')[0];
 
 usernameButton.addEventListener('click', () => {
   username = usernameInput.value.trim();
-  if (username) {
+  interests = interestsInput.value.trim();
+  if (username && interests) {
     usernameModal.style.display = 'none';
     document.querySelector('.container').style.display = 'block';
   } else {
-    alert('Username cannot be empty');
+    alert('Username and interests cannot be empty');
   }
 });
 
