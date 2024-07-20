@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AjnaBee</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="usernameModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter Your Username and Interests</h2>
+      <input type="text" id="usernameInput" placeholder="Username">
+      <input type="text" id="interestsInput" placeholder="Interests (comma-separated)">
+      <button id="usernameButton">Submit</button>
+    </div>
+  </div>
+  <div class="container" style="display: none;">
+    <header><h1>AjnaBee</h1></header>
+    <main>
+      <section id="chatSection">
+        <div id="chat">
+          <div id="messages"></div>
+          <div class="chat-input">
+            <input id="messageInput" type="text" placeholder="Type a message..." autocomplete="off">
+            <button id="sendButton">Send</button>
+          </div>
+        </div>
+      </section>
+      <section id="videoChatSection">
+        <!-- Video chat will be added here later -->
+      </section>
+    </main>
+    <footer><p>&copy; 2024 AjnaBee</p></footer>
+  </div>
+  <!-- Include Socket.IO client library -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Include your custom JavaScript file -->
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
