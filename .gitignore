@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+
+# IDE/editor configurations
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+*.zip
+*.tar.gz
